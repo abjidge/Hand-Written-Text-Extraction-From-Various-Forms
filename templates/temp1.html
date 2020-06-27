@@ -1,0 +1,27 @@
+<script>
+    document.getElementById('submit').onclick = function() {
+
+        var id = prompt('Enter name');
+        count = prompt('Enter number of Options')
+        for(var i=0; i<count;i=i+1)
+        {
+            var radiobox = document.createElement('input');
+            radiobox.type = 'radio';
+            radiobox.id = id;
+            radiobox.value = prompt('Enter Value');
+            var label = document.createElement('label')
+            label.htmlFor = id;
+
+            var description = document.createTextNode(prompt('Enter name
+          '));
+            label.appendChild(description);
+
+            var newline = document.createElement('br');
+
+            var container = document.getElementById('container');
+            container.appendChild(radiobox);
+            container.appendChild(label);
+            container.appendChild(newline);
+        }
+      }
+</script>

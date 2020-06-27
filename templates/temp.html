@@ -1,0 +1,6 @@
+{{file_name}}
+{% if file_name %}
+	<div>
+		<img src="{{ url_for('static', filename='UPLOAD_FOLDER/'+file_name) }}" alt="">
+	</div>
+{% endif %}

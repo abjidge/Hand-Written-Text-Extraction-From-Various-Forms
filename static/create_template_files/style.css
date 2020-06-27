@@ -1,0 +1,6 @@
+html.grid-backdrop-enabled {
+    background: url("aa.png");
+}
+html.grid-backdrop-enabled body {
+    opacity: 0.8;
+}
